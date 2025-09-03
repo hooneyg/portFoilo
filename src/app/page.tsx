@@ -29,7 +29,7 @@ export default async function HomePage() {
         <h1 className="text-5xl md:text-6xl font-bold">
           Welcome to{' '}
           <span className="text-indigo-400">
-            DEV.Hooney's Blog
+            DEV.Hooney&apos;s Blog
           </span>
         </h1>
 

@@ -2,7 +2,7 @@
 
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 const Eye = (props: React.SVGProps<SVGSVGElement>) => (
@@ -171,7 +171,7 @@ export default function LoginPage() {
     <div className="flex justify-center items-center h-screen bg-gray-900">
       <div className="w-full max-w-sm p-8 space-y-6 bg-gray-800 rounded-lg shadow-xl">
         
-        <h1 className="text-2xl font-bold text-center text-white">Dev.Hooney's Blog</h1>
+        <h1 className="text-2xl font-bold text-center text-white">Dev.Hooney&apos;s Blog</h1>
 
         <div className="flex flex-col space-y-2">
           <button
