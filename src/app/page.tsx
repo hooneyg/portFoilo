@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
-import Link from 'next/link'
 import { signOut } from './auth/actions'
+import Link from 'next/link'
+import ContactEmail from './component/ContactEmail' // 컴포넌트 import
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -29,13 +30,15 @@ export default async function HomePage() {
         <h1 className="text-5xl md:text-6xl font-bold">
           Welcome to{' '}
           <span className="text-indigo-400">
-            DEV.Hooney&apos;s Blog
+            Dev.Hooneyz Blog
           </span>
         </h1>
 
         <p className="mt-3 text-lg text-gray-300">
           기술과 경험을 기록하고 공유하는 공간입니다.
         </p>
+        <ContactEmail />
+
 
         <div className="mt-12 flex flex-col items-center space-y-4">
           {user ? (

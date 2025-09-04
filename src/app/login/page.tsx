@@ -158,7 +158,7 @@ export default function LoginPage() {
   // 캡차가 성공적으로 완료되면 토큰을 저장하는 함수
   const onCaptchaVerify = (token: string) => {
     setCaptchaToken(token);
-    console.log("CAPTCHA verified, token:", token);
+    // console.log("CAPTCHA verified, token:", token);
     // handleSignInAnonymously();
   };
   
@@ -193,6 +193,7 @@ export default function LoginPage() {
             <span className="ml-2">카카오 로그인</span>
           </button> */}
         </div>
+        
 
         <div className="relative">
           <div className="absolute inset-0 flex items-center">
